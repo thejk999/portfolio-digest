@@ -1,0 +1,41 @@
+name: Weekly Portfolio Digest
+
+on:
+  schedule:
+    # Every Monday at 06:00 UTC (08:00 Prague winter / 08:00 Prague summer is 06:00 UTC)
+    - cron: '0 6 * * 1'
+  workflow_dispatch:  # Allows manual triggering from the GitHub website
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # needed to commit the digest file back to the repo
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run digest script
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python weekly_digest.py
+
+      - name: Commit digest to repo
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add digest_*.md
+          if git diff --staged --quiet; then
+            echo "No new digest to commit."
+          else
+            git commit -m "Weekly digest $(date +'%Y-%m-%d')"
+            git push
+          fi
