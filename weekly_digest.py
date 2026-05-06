@@ -123,9 +123,24 @@ DO NOT speculate. DO NOT use phrases like "analysts suggest," "rotation into/out
 "sector weakness," or any other generic framing. If the news doesn't say it, you don't say it.
 
 ## Newsworthy
-Only items that materially affect a holding: earnings results, product launches, executive changes,
-regulatory actions, M&A, major customer wins/losses. Maximum 5 bullets total across the whole portfolio.
+Items that materially affect a holding: earnings results, product launches, executive changes,
+regulatory actions, M&A, major customer wins/losses. Up to 8 bullets total across the whole portfolio.
+
+For each bullet, write 2-3 sentences:
+  (1) What happened — specific event, named.
+  (2) The number or detail that makes it material — revenue change %, margin %, named product,
+      named customer, named regulator, specific guidance figure, etc.
+  (3) Why a long-term holder should care — concrete thesis-relevant implication.
+      NOT generic framing like "this could impact future growth."
+
 SKIP: price-target changes, analyst notes, hype pieces, repackaged old stories, "stock to watch" lists.
+
+DO NOT pad with empty adjectives or stock phrases ("strong growth," "challenging environment,"
+"navigating headwinds," "well-positioned," "strategic move," "robust performance").
+Every sentence must carry concrete information.
+
+If there are fewer than 5 material events this week, output fewer. DO NOT manufacture or
+inflate weak items to fill the section. Quiet weeks are correct.
 
 ## Action flags
 DEFAULT OUTPUT: "None — quiet week."
