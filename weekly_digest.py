@@ -1,185 +1,97 @@
-"""
-weekly_digest.py
-================
-Weekly portfolio digest for a 12-stock portfolio.
-Runs every Monday morning, fetches news + price data, asks Claude to summarize,
-saves the result as a markdown file.
+Skip to content
+thejk999
+portfolio-digest
+Repository navigation
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security and quality
+Insights
+Settings
+Commit 5f50522
+actions-user
+actions-user
+committed
+2 minutes ago
+Weekly digest 2026-05-06
+main
+1 parent 
+04f1ec6
+ commit 
+5f50522
+2 files changed
++68
+Lines changed: 68 additions & 0 deletions
+File tree
 
-Designed for a 16-year-old learner-investor, deployable via GitHub Actions.
-"""
+digest_2026-05-06.md
+digest_latest.md
 
-import os
-import sys
-from datetime import datetime, timedelta
-from urllib.parse import quote
+ 
+Customizable line height
+The default line height has been increased for improved accessibility. You can choose to enable a more compact line height from the view settings menu.
 
-import yfinance as yf
-import feedparser
-import anthropic
-
-# === CONFIG ============================================================
-# Edit this dict to add/remove holdings. Format: "TICKER": "Display Name"
-# Use Yahoo Finance ticker conventions (e.g. ZAL.DE for German stocks).
-
-PORTFOLIO = {
-    "ZAL.DE":  "Zalando",
-    "DUOL":    "Duolingo",
-    "ONON":    "On Holding",
-    "NKE":     "Nike",
-    "KO":      "Coca-Cola",
-    "VOO":     "Vanguard S&P 500 ETF",
-    "MCD":     "McDonald's",
-    "MSFT":    "Microsoft",
-    "PG":      "Procter & Gamble",
-    "SPOT":    "Spotify",
-    "MELI":    "MercadoLibre",
-    "DIS":     "Disney",
-}
-
-CLAUDE_MODEL = "claude-sonnet-4-6"
-NEWS_PER_TICKER = 4
-LOOKBACK_DAYS = 7
-
-# === DATA FETCH ========================================================
-
-def get_price_snapshot(ticker: str) -> dict | None:
-    """Fetch last 7-day price move for a ticker."""
-    try:
-        stock = yf.Ticker(ticker)
-        hist = stock.history(period="7d")
-        if hist.empty or len(hist) < 2:
-            return None
-        current = float(hist['Close'].iloc[-1])
-        week_ago = float(hist['Close'].iloc[0])
-        change_pct = ((current - week_ago) / week_ago) * 100
-        return {'current': round(current, 2), 'change_pct': round(change_pct, 2)}
-    except Exception as e:
-        print(f"[warn] price fetch failed for {ticker}: {e}", file=sys.stderr)
-        return None
+‎digest_2026-05-06.md‎
++34
+Lines changed: 34 additions & 0 deletions
 
 
-def get_news_rss(name: str, days: int = LOOKBACK_DAYS) -> list[dict]:
-    """Fetch recent news headlines from Google News RSS."""
-    query = f"{name} stock"
-    url = f"https://news.google.com/rss/search?q={quote(query)}&hl=en-US&gl=US&ceid=US:en"
-    try:
-        feed = feedparser.parse(url)
-        cutoff = datetime.now() - timedelta(days=days)
-        items = []
-        for entry in feed.entries[:NEWS_PER_TICKER * 3]:
-            try:
-                published = datetime(*entry.published_parsed[:6])
-                if published < cutoff:
-                    continue
-                items.append({
-                    'title': entry.title,
-                    'date': published.strftime('%Y-%m-%d'),
-                })
-                if len(items) >= NEWS_PER_TICKER:
-                    break
-            except Exception:
-                continue
-        return items
-    except Exception as e:
-        print(f"[warn] news fetch failed for '{name}': {e}", file=sys.stderr)
-        return []
-
-
-# === CLAUDE SYNTHESIS ==================================================
-
-def build_prompt(data: dict) -> str:
-    sections = []
-    for ticker, info in data.items():
-        name = PORTFOLIO[ticker]
-        block = f"### {ticker} — {name}\n"
-        if info['price']:
-            p = info['price']
-            block += f"7-day move: {p['change_pct']:+.1f}%  (current: {p['current']})\n"
-        else:
-            block += "Price data: unavailable\n"
-        if info['news']:
-            block += "Recent headlines:\n"
-            for n in info['news']:
-                block += f"  - [{n['date']}] {n['title']}\n"
-        else:
-            block += "Recent headlines: none in past week\n"
-        sections.append(block)
-    portfolio_summary = "\n".join(sections)
-
-    return f"""You are writing a weekly investing digest for a 16-year-old learner-investor.
-
-His portfolio (12 holdings):
-{portfolio_summary}
-
-Produce a digest in this exact structure:
-
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,34 @@
+# Weekly Portfolio Digest — 2026-05-06
 ## Movers
-The 2 biggest up moves and 2 biggest down moves this week. One line each.
-If the news in the data plausibly explains the move, name it. If not, do NOT speculate — just state the move.
-
+**Up:** DIS +5.9% — Q2 earnings beat estimates; new CEO outlined a growth strategy that markets received positively.
+**Up:** VOO +3.0% — broad S&P 500 rally, driven in part by an AI-sector surge.
+**Down:** ZAL.DE -6.4% — Q1 results showed a net loss as rising costs ate into strong revenue growth.
+**Down:** MSFT -3.7% — move occurred despite a Q1 earnings beat; analysts suggest rotation out of MSFT into other AI names.
+---
 ## Newsworthy
-Only items that materially affect a holding: earnings results, product launches, executive changes,
-regulatory actions, M&A, major customer wins/losses. Maximum 5 bullets total across the whole portfolio.
-SKIP: price-target changes, analyst notes, hype pieces, repackaged old stories, "stock to watch" lists.
-
+- **ZAL.DE** reported Q1 results: revenue and order volume grew, but higher costs pushed the company to a net loss for the quarter.
+- **DIS** beat Q2 earnings estimates; new CEO Josh D'Amaro presented his strategic vision for the company on his first earnings call in the role.
+- **KO** raised its full-year EPS guidance after a strong Q1 beat.
+- **NKE** is under investigation by the EEOC (Equal Employment Opportunity Commission), adding a regulatory overhang to an already difficult year (stock down 32% in 2026).
+- **SPOT** was downgraded by at least one analyst after Q1 results; separately, Universal Music sold a portion of its Spotify stake, raising questions about the artist-pay relationship between labels and the platform.
+---
 ## Action flags
-Only fill this if something appears to challenge a long-term thesis (major margin pressure, key
-executive departure, large customer loss, regulatory ruling, broken product). Most weeks the
-correct answer is "None — quiet week." That is a valid and preferred output.
-
+**NKE** — An active EEOC investigation is a regulatory action worth monitoring. Combined with a 32% decline this year and a Reuters report of surging short interest, the turnaround thesis under CEO Hill is under visible stress. Not a reason to act, but worth watching for further developments.
+---
 ## One thing worth reading
-The single most useful article from the headlines above for a learner-investor.
-One bullet. If nothing qualifies, write "Nothing essential this week."
-
-RULES (strict):
-- Brevity over completeness. 5 bullets per section maximum.
-- No price predictions.
-- No hedge words: "could," "might," "may," "potentially." Either say it plainly or skip it.
-- No financial advice. This is a digest, not a recommendation.
-- "Quiet week — no action needed" is a great output and means the system is working correctly.
-- Never invent news that isn't in the data.
-"""
+- **"Spotify (SPOT) Got Punished After Q1. Margins and Cash Flow Tell a Different Story"** (TipRanks, May 5) — A good real-world example of how a stock price reaction and the underlying business results can point in opposite directions, and why reading past the headline number matters.
+---
+*Generated automatically. Not financial advice. Always verify before acting.*
+‎digest_latest.md‎
++34
+Lines changed: 34 additions & 0 deletions
 
 
-def synthesize(data: dict) -> str:
-    client = anthropic.Anthropic()  # uses ANTHROPIC_API_KEY env var
-    response = client.messages.create(
-        model=CLAUDE_MODEL,
-        max_tokens=2000,
-        messages=[{"role": "user", "content": build_prompt(data)}],
-    )
-    return response.content[0].text
-
-
-# === MAIN ==============================================================
-
-def main():
-    print(f"Fetching data for {len(PORTFOLIO)} holdings...")
-    data = {}
-    for ticker, name in PORTFOLIO.items():
-        print(f"  {ticker} ({name})")
-        data[ticker] = {
-            'price': get_price_snapshot(ticker),
-            'news': get_news_rss(name),
-        }
-
-    print("\nSynthesizing with Claude...")
-    digest = synthesize(data)
-
-    today = datetime.now().strftime("%Y-%m-%d")
-    output = f"# Weekly Portfolio Digest — {today}\n\n{digest}\n\n---\n\n"
-    output += "*Generated automatically. Not financial advice. Always verify before acting.*\n"
-
-    # Save dated copy + 'latest' for convenience
-    with open(f"digest_{today}.md", "w", encoding="utf-8") as f:
-        f.write(output)
-    with open("digest_latest.md", "w", encoding="utf-8") as f:
-        f.write(output)
-
-    print(f"\nDigest saved: digest_{today}.md")
-    print("\n----- PREVIEW -----")
-    print(digest[:500] + "...")
-
-
-if __name__ == "__main__":
-    main()
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,34 @@
+# Weekly Portfolio Digest — 2026-05-06
+## Movers
+**Up:** DIS +5.9% — Q2 earnings beat estimates; new CEO outlined a growth strategy that markets received positively.
+**Up:** VOO +3.0% — broad S&P 500 rally, driven in part by an AI-sector surge.
+**Down:** ZAL.DE -6.4% — Q1 results showed a net loss as rising costs ate into strong revenue growth.
+**Down:** MSFT -3.7% — move occurred despite a Q1 earnings beat; analysts suggest rotation out of MSFT into other AI names.
+---
+## Newsworthy
+- **ZAL.DE** reported Q1 results: revenue and order volume grew, but higher costs pushed the company to a net loss for the quarter.
+- **DIS** beat Q2 earnings estimates; new CEO Josh D'Amaro presented his strategic vision for the company on his first earnings call in the role.
+- **KO** raised its full-year EPS guidance after a strong Q1 beat.
+- **NKE** is under investigation by the EEOC (Equal Employment Opportunity Commission), adding a regulatory overhang to an already difficult year (stock down 32% in 2026).
+- **SPOT** was downgraded by at least one analyst after Q1 results; separately, Universal Music sold a portion of its Spotify stake, raising questions about the artist-pay relationship between labels and the platform.
+---
+## Action flags
+**NKE** — An active EEOC investigation is a regulatory action worth monitoring. Combined with a 32% decline this year and a Reuters report of surging short interest, the turnaround thesis under CEO Hill is under visible stress. Not a reason to act, but worth watching for further developments.
+---
+## One thing worth reading
+- **"Spotify (SPOT) Got Punished After Q1. Margins and Cash Flow Tell a Different Story"** (TipRanks, May 5) — A good real-world example of how a stock price reaction and the underlying business results can point in opposite directions, and why reading past the headline number matters.
+---
+*Generated automatically. Not financial advice. Always verify before acting.*
+0 commit comments
+Comments
+0
+ (0)
+Comment
+You're not receiving notifications from this thread.
