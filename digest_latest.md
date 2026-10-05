@@ -1,28 +1,24 @@
-# Weekly Portfolio Digest — 2026-09-28
+# Weekly Portfolio Digest — 2026-10-05
 
 ## Movers
 
-**Up:**
-- ONON +9.6% (no specific catalyst in news)
-- MSFT +3.7% — Microsoft launched what Investor's Business Daily calls an "AI Super-App," a named product event coinciding with the move.
+**Up**
+- MELI +4.7% (no specific catalyst in news)
+- ONON +4.5% (no specific catalyst in news)
 
-**Down:**
-- MCD -4.8% — Yahoo Finance and Forbes both name Big Mac price inflation driving consumer pushback as the specific cause of the sell-off.
-- SPOT -3.6% (no specific catalyst in news)
+**Down**
+- NKE -7.0% — Nike reported weak revenue outlook and announced layoffs are underway (CNBC, Oct 2)
+- SPOT -7.0% (no specific catalyst in news)
 
 ---
 
 ## Newsworthy
 
-- **MCD: Price-driven consumer revolt named in coverage.** Yahoo Finance reports McDonald's stock is down 30% from its peak, with the specific trigger being customer pushback against Big Mac price increases. Forbes adds that McDonald's comeback plan involves changes analysts say carry execution risk. A long-term holder needs to watch whether the brand's core value proposition — affordable fast food — has been permanently damaged by its own pricing decisions.
+- **Nike issued a weak revenue outlook and confirmed layoffs are in progress.** CNBC reported Oct 2 that shares tumbled on the announcement; no specific revenue figures appeared in the available headlines, but the guidance was weak enough to drag Lululemon, On Holding, Under Armour, and Deckers Outdoor lower on the same day. Long-term holders should note that the pain is broad enough to signal a category-level demand problem in athletic footwear and apparel, not just Nike-specific execution.
 
-- **MSFT: Named product launch — AI Super-App.** Microsoft launched a new product framed as an "AI operating system" built on Copilot, reported by both Investor's Business Daily and Oppenheimer via Yahoo Finance. This is a named platform expansion, not a feature update. If Copilot becomes an operating layer across enterprise software, it reinforces Microsoft's ability to charge recurring subscription premiums across its existing customer base.
+- **McDonald's shares are near a 52-week low, and Wells Fargo cut its price target after an analyst day.** Wells Fargo described the analyst day message as "hard to digest" (Yahoo Finance, Oct 5). CNBC separately framed the stock as hovering near a 52-week low while value competition from rivals is intensifying. For a long-term holder, the core question is whether McDonald's value positioning — historically its moat — is being eroded by fast-casual and QSR competitors.
 
-- **ONON: $1 billion milestone named in coverage.** Barchart names a $1 billion revenue figure as a reason to buy, and Motley Fool and Yahoo Finance both report the stock jumped without a change in near-term guidance. The jump on unchanged guidance suggests the market is repricing On's longer-term growth trajectory rather than reacting to a single quarter.
-
-- **DUOL: CEO and a 10% shareholder sold shares this week.** Luis von Ahn sold $4.25 million in shares, and a 10% shareholder sold $6.17 million, both reported by named sources this week. Insider sales at this scale — from both the CEO and a major shareholder simultaneously — are a data point worth noting. It does not prove anything on its own, but a long-term holder should track whether this becomes a pattern.
-
-- **NKE: Bank of America issued a named sell call; stock near 12-year low.** Investopedia names Bank of America specifically calling rising risks and recommending selling. TradingView reports Nike is near a 12-year low, with earnings approaching. Nike's valuation story depends on a brand recovery — if earnings confirm the brand has lost pricing power with consumers, the recovery thesis weakens in a concrete way.
+- **Disney announced a restructuring of its Television Division that threatens hundreds of jobs.** The restructuring is named as planned, not speculative (TIKR.com, Oct 5). Job cuts at the TV division signal Disney is shrinking a legacy business unit. Long-term holders should watch whether cost savings here are being redeployed into streaming and parks, which are the growth legs of the thesis.
 
 ---
 
@@ -34,7 +30,7 @@ None — quiet week.
 
 ## One thing worth reading
 
-**"Is VOO or VTI the Better Long-Term Investment? Here's What History Suggests." — The Motley Fool (2026-09-25).** For a learner-investor holding VOO, understanding the difference between an S&P 500 ETF and a total market ETF — and what historical data says about the tradeoff — is one of the most foundational concepts in index investing. Worth reading once and remembering for life.
+**"History Says Coca-Cola Stock Holds Up When the S&P 500 Falls"** — The Motley Fool, Oct 3. Useful for a learner-investor because it introduces the concept of defensive stocks and how different holdings in a portfolio behave differently during market downturns — a concrete lesson in diversification that your own portfolio illustrates this week.
 
 ---
 
