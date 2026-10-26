@@ -1,23 +1,26 @@
-# Weekly Portfolio Digest — 2026-10-19
+# Weekly Portfolio Digest — 2026-10-26
 
 ## Movers
 
-**Up:** ZAL.DE +7.4% (no specific catalyst in news). KO +7.0% (no specific catalyst in news).
-**Down:** DUOL -6.3% (no specific catalyst in news). MELI -1.2% (no specific catalyst in news).
+**Up:**
+- SPOT +9.5% — Spotify reported Q3 subscriber numbers that beat expectations and issued a bullish forecast.
+- ZAL.DE +8.0% — (no specific catalyst in news)
+
+**Down:**
+- ONON -7.6% — (no specific catalyst in news)
+- DUOL -4.0% — (no specific catalyst in news)
 
 ---
 
 ## Newsworthy
 
-- **Zalando — Returns Robots rollout.** Zalando is deploying robots to handle product returns processing. The headlines name this as a potential game-changer for unit economics, though no specific cost or throughput figures appear in the data. A long-term holder should watch whether this reduces the historically high cost of free returns, which has been one of Zalando's biggest margin drags.
+- **Spotify (SPOT) Q3 earnings beat.** Spotify reported Q3 results with subscriber growth above expectations and raised its forward guidance. For a long-term holder, sustained subscriber growth is the core lever for margin expansion — each new subscriber carries near-zero marginal cost, so beating on this metric moves the profitability timeline forward.
 
-- **Zalando — Q3 earnings due November 3.** Zalando reports on November 3. No guidance figures are in the current headlines. This is the next concrete data point on whether the platform's margin recovery is on track.
+- **Procter & Gamble (PG) earnings beat.** P&G reported Q3 sales up 4%, driven specifically by laundry and home care products. For a long-term holder, organic sales growth in core categories confirms that P&G's pricing power and brand loyalty remain intact — the two pillars of its defensive moat.
 
-- **Duolingo — Securities class action, lead plaintiff deadline December 7, 2026.** Kaplan Fox is actively recruiting lead plaintiffs for a securities lawsuit against Duolingo. No specific claim figures or named allegations appear in the data. If the lawsuit names a material misstatement about financials or user metrics, it could affect management credibility — worth tracking what the underlying allegation is.
+- **McDonald's (MCD) down roughly 20% in 2026.** Coverage this week explicitly named the full-year decline, framing the question of whether current prices reflect a fundamental deterioration or a temporary reset. Long-term holders should track whether customer traffic (not just revenue) is declining, as traffic loss is harder to reverse than pricing pressure.
 
-- **Nike — Morningstar cuts fair value estimate by 44%.** Morningstar named intensifying competition as the reason for the cut. A 44% fair value reduction from a major research firm is a significant revision. A long-term holder should determine whether the competition named (not specified further in the headline) threatens Nike's brand pricing power, which is the core of its moat.
-
-- **Microsoft — Earnings due October 28.** A headline directly names October 28 as the reporting date. No guidance figures appear in the data. This is the next hard test of whether Microsoft's AI-driven cloud revenue growth is meeting expectations.
+- **Microsoft (MSFT) earnings approaching.** Microsoft is reporting this week, with Azure demand cited as the specific focus. Azure's growth rate is the clearest test of whether Microsoft's AI infrastructure spending is converting into revenue — a number worth watching when results land.
 
 ---
 
@@ -29,7 +32,8 @@ None — quiet week.
 
 ## One thing worth reading
 
-**"All It Takes Is 472 Shares of Coca-Cola Stock to Earn $1,000 a Year in Dividends"** (Yahoo Finance, Oct 19) — A concrete, numbers-first look at how dividend income compounds over time, using a real holding in your portfolio. Useful for understanding the math behind dividend investing rather than just the concept.
+**"Should You Forget the Vanguard S&P 500 ETF (VOO) and Buy the Invesco S&P 500 Equal Weight ETF (RSP) Instead?" — The Motley Fool (Oct 23)**
+This article directly addresses a real structural question about index concentration risk — something directly relevant to a VOO holder. Understanding the difference between market-cap weighting and equal weighting is a foundational concept, and seeing it applied to a holding you own makes it concrete rather than abstract.
 
 ---
 
