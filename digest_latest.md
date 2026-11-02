@@ -1,26 +1,28 @@
-# Weekly Portfolio Digest — 2026-10-26
+# Weekly Portfolio Digest — 2026-11-02
 
 ## Movers
 
 **Up:**
-- SPOT +9.5% — Spotify reported Q3 subscriber numbers that beat expectations and issued a bullish forecast.
-- ZAL.DE +8.0% — (no specific catalyst in news)
+- ONON +7.2% (no specific catalyst in news)
+- MCD +6.2% (no specific catalyst in news)
 
 **Down:**
-- ONON -7.6% — (no specific catalyst in news)
-- DUOL -4.0% — (no specific catalyst in news)
+- MELI -7.0% (no specific catalyst in news)
+- DUOL -5.7% — CEO flagged slower growth, triggering a selloff per Stocktwits headline dated Oct 31
 
 ---
 
 ## Newsworthy
 
-- **Spotify (SPOT) Q3 earnings beat.** Spotify reported Q3 results with subscriber growth above expectations and raised its forward guidance. For a long-term holder, sustained subscriber growth is the core lever for margin expansion — each new subscriber carries near-zero marginal cost, so beating on this metric moves the profitability timeline forward.
+- **Duolingo CEO flagged slower growth.** On October 31, Duolingo's CEO publicly signaled that growth is decelerating, which the market treated as a material negative. This matters for long-term holders because Duolingo's valuation rests on a sustained high-growth narrative — any credible signal from management that growth is slowing puts that valuation under pressure.
 
-- **Procter & Gamble (PG) earnings beat.** P&G reported Q3 sales up 4%, driven specifically by laundry and home care products. For a long-term holder, organic sales growth in core categories confirms that P&G's pricing power and brand loyalty remain intact — the two pillars of its defensive moat.
+- **Zalando Q3 interim statement scheduled for November 3.** Zalando announced it will release its interim statement on that date, covering Q3 performance. For holders, this is the next concrete data point on whether Zalando's shift toward a platform/marketplace model is improving margins.
 
-- **McDonald's (MCD) down roughly 20% in 2026.** Coverage this week explicitly named the full-year decline, framing the question of whether current prices reflect a fundamental deterioration or a temporary reset. Long-term holders should track whether customer traffic (not just revenue) is declining, as traffic loss is harder to reverse than pricing pressure.
+- **MercadoLibre's fintech chief stated no deceleration in Brazil credit business.** In a direct statement, the executive said there is "not seeing any deceleration or deterioration" in Brazil, ahead of a November 4 earnings report. Brazil is MercadoLibre's largest market, and the credit business is a key driver of fintech revenue — the earnings release will confirm or contradict this claim.
 
-- **Microsoft (MSFT) earnings approaching.** Microsoft is reporting this week, with Azure demand cited as the specific focus. Azure's growth rate is the clearest test of whether Microsoft's AI infrastructure spending is converting into revenue — a number worth watching when results land.
+- **Nike stock hit a fresh 52-week low with $35.15 cited as support.** A TradingKey headline dated November 1 names this as a new low. For long-term holders, this indicates the market is still repricing Nike's recovery timeline, not yet pricing in a turnaround.
+
+- **Microsoft reported record quarterly gains, with shares noted as surging 37.8%.** A Yahoo Finance headline dated November 2 names "record quarterly gains" as the driver. For long-term holders, a record quarter while the company is also investing heavily in AI infrastructure suggests the core business is funding the transition without margin collapse.
 
 ---
 
@@ -32,8 +34,7 @@ None — quiet week.
 
 ## One thing worth reading
 
-**"Should You Forget the Vanguard S&P 500 ETF (VOO) and Buy the Invesco S&P 500 Equal Weight ETF (RSP) Instead?" — The Motley Fool (Oct 23)**
-This article directly addresses a real structural question about index concentration risk — something directly relevant to a VOO holder. Understanding the difference between market-cap weighting and equal weighting is a foundational concept, and seeing it applied to a holding you own makes it concrete rather than abstract.
+**"Is the Vanguard S&P 500 ETF Still a Buy for Long-Term Investors? Here's My Honest Take."** — Yahoo Finance, Nov 1. Useful for a learner-investor because VOO is the broadest holding in this portfolio and understanding the reasoning behind owning an index ETF for the long term is foundational — more valuable than reading about any single stock.
 
 ---
 
