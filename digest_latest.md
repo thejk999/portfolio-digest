@@ -1,28 +1,26 @@
-# Weekly Portfolio Digest — 2026-11-02
+# Weekly Portfolio Digest — 2026-11-09
 
 ## Movers
 
 **Up:**
-- ONON +7.2% (no specific catalyst in news)
-- MCD +6.2% (no specific catalyst in news)
+- DUOL +20.5% — Q3 earnings reported: revenues beat estimates, shares rose 25.3% on results day.
+- ONON +11.2% — (no specific catalyst in news)
 
 **Down:**
-- MELI -7.0% (no specific catalyst in news)
-- DUOL -5.7% — CEO flagged slower growth, triggering a selloff per Stocktwits headline dated Oct 31
+- MELI -5.8% — Profit missed estimates due to increased logistics spending, per Reuters.
+- VOO -0.9% — (no specific catalyst in news)
 
 ---
 
 ## Newsworthy
 
-- **Duolingo CEO flagged slower growth.** On October 31, Duolingo's CEO publicly signaled that growth is decelerating, which the market treated as a material negative. This matters for long-term holders because Duolingo's valuation rests on a sustained high-growth narrative — any credible signal from management that growth is slowing puts that valuation under pressure.
+- **DUOL Q3 earnings beat on revenue, missed on earnings.** Duolingo reported Q3 results where revenues beat analyst estimates but earnings per share missed. Shares still rose ~25% on the report, suggesting the market weighted revenue growth over bottom-line shortfall. For a long-term holder, the revenue beat indicates user growth and monetisation are tracking; the earnings miss means the company is still spending to grow, not yet optimising for profit.
 
-- **Zalando Q3 interim statement scheduled for November 3.** Zalando announced it will release its interim statement on that date, covering Q3 performance. For holders, this is the next concrete data point on whether Zalando's shift toward a platform/marketplace model is improving margins.
+- **MELI profit miss on logistics spending.** MercadoLibre reported a profit miss driven by deliberate increases in logistics infrastructure spending, per Reuters. The company is investing in its own fulfilment and delivery network across Latin America. For a long-term holder, this is a margin compression event from reinvestment, not demand weakness — the thesis depends on whether that logistics build-out creates durable competitive advantage.
 
-- **MercadoLibre's fintech chief stated no deceleration in Brazil credit business.** In a direct statement, the executive said there is "not seeing any deceleration or deterioration" in Brazil, ahead of a November 4 earnings report. Brazil is MercadoLibre's largest market, and the credit business is a key driver of fintech revenue — the earnings release will confirm or contradict this claim.
+- **MCD earnings beat with U.S. restaurant improvement.** McDonald's reported earnings that beat estimates, with U.S. same-restaurant performance showing improvement, per CNBC. The stock is trading near a 4-year low despite the beat. For a long-term holder, domestic recovery matters because the U.S. is McDonald's highest-margin market, and improvement there directly supports the core earnings base.
 
-- **Nike stock hit a fresh 52-week low with $35.15 cited as support.** A TradingKey headline dated November 1 names this as a new low. For long-term holders, this indicates the market is still repricing Nike's recovery timeline, not yet pricing in a turnaround.
-
-- **Microsoft reported record quarterly gains, with shares noted as surging 37.8%.** A Yahoo Finance headline dated November 2 names "record quarterly gains" as the driver. For long-term holders, a record quarter while the company is also investing heavily in AI infrastructure suggests the core business is funding the transition without margin collapse.
+- **DIS reaches 52-week high; cost cuts and layoffs announced.** Disney's stock hit a 52-week high of $117.10, alongside reporting plans for 20% cost cuts and thousands of layoffs. The scale of the restructuring is material — cost cuts of that size affect both near-term earnings and the long-term shape of the business. For a long-term holder, the key question is whether cuts fall on overhead or on content and parks investment, which are the two engines of subscriber and visitor growth.
 
 ---
 
@@ -34,7 +32,7 @@ None — quiet week.
 
 ## One thing worth reading
 
-**"Is the Vanguard S&P 500 ETF Still a Buy for Long-Term Investors? Here's My Honest Take."** — Yahoo Finance, Nov 1. Useful for a learner-investor because VOO is the broadest holding in this portfolio and understanding the reasoning behind owning an index ETF for the long term is foundational — more valuable than reading about any single stock.
+- **"MercadoLibre: 3 Key Takeaways for Long-Term Investors" — The Motley Fool (Nov 9).** If you hold MELI, this is worth reading after a week where profit missed and the stock dropped nearly 6%. Understanding what the company says about *why* it's spending on logistics — and whether that maps to your original reason for holding — is exactly the kind of thinking a long-term investor should practise after a down move.
 
 ---
 
